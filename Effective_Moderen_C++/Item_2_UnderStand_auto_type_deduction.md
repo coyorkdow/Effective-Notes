@@ -7,7 +7,7 @@ template<typename T>
 void f(ParamType param);
 ```
 
-`auto`推导中，`auto`扮演了模板中`T`的角色。对`auto`关键词可以添加类型修饰符（cv-限定，指针和引用），和类型修饰符一起，扮演了了模板中`ParamType`的角色。
+`auto`推导中，`auto`扮演了模板中`T`的角色。对`auto`关键词可以添加类型修饰符（cv-限定，指针和引用），和类型修饰符一起，扮演了模板中`ParamType`的角色。
 
 唯一的例外是，`c++11`起引入了用大括号表示的统一初始化，大括号对于非特化的模板来说是无法被推导的，但是可以被`auto`推导为`std::initializer_list`，该类型是一个模板类。
 
