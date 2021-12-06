@@ -38,7 +38,7 @@ T& Get(size_t i) {
 
 ---
 
-注1: 对于指针来说，指针本身是`const`和指涉的型别是`const`是两个概念。自身是`const`又叫“顶层const”，而另一种则叫“底层const”。声明“顶层const”的方法是把`const`加在指针符号的后面。
+**注1:** 对于指针来说，指针本身是`const`和指涉的型别是`const`是两个概念。自身是`const`又叫“顶层const”，而另一种则叫“底层const”。声明“顶层const”的方法是把`const`加在指针符号的后面。
 
 ```c++
 const int* ptr1; // ptr1指向const int，但它自己不是const
@@ -49,4 +49,4 @@ const int *
 
 但是即使知道了这条规则，形如`const int ** const *`这样多层指针的型别仍然令人困扰（它的指涉关系是：非const指针->const指针->非const指针->`const int`）。这个时候使用`c++11`提供的`using`类型别名会大大提升代码可读性。
 
-注2: 看起来`const_cast`能强制修改`const`修饰的变量的值，但是这种行为其实是为定义的。
+**注2:** 看起来`const_cast`能强制修改`const`修饰的变量的值，但是这种行为其实是为定义的。
