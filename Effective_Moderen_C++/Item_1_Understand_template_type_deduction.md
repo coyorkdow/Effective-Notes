@@ -7,7 +7,7 @@ template<typename T>
 void f(ParamType param);
 ```
 
-一次形如`f(expr)`的调用会让编译器推导出两个型别：`T`和`ParamType`，`ParamType`可以与`T`不同，通常前者包含了cv限定符(`const`和`volatile`)以及指针/引用符号。
+一次形如`f(expr)`的调用会让编译器推导出两个型别：`ParamType`和`T`。`ParamType`可以与`T`不同，通常前者包含了cv限定符(`const`和`volatile`)以及指针/引用符号。
 
 如果`ParamType`为引用或指针，`T`的推导结果可以包含cv限定符，否则不行。
 
