@@ -44,7 +44,6 @@ T& Get(size_t i) {
 const int* ptr1; // ptr1指向const int，但它自己不是const
 int* const ptr2; // ptr2是const的，但是它指涉的变量可以被修改
 const int* const ptr3; // 指向const int的const指针
-const int *
 ```
 
 但是即使知道了这条规则，形如`const int ** const *`这样多层指针的型别仍然令人困扰（它的指涉关系是：非const指针->const指针->非const指针->`const int`）。这个时候使用`c++11`提供的`using`类型别名会大大提升代码可读性。
