@@ -5,3 +5,5 @@
 [条款3: 尽可能使用const](Item_3_Use_const_whenever_possible.md)
 
 [条款4: 确保对象被使用前已被初始化](Item_4_Make_sure_that_objects_are_initialized_before_they_are_used.md)
+
+[条款7: 为多态基类声明virtual析构函数](Item_7_Declare_destructors_virtual_in_polymorphic_base_classes.md)
